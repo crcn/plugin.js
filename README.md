@@ -223,8 +223,8 @@ exports.plugin = function() {
 	return {
 		init: function() {
 			
-			console.log(exports.require.myBean.instance()); //return a single instance
-			console.log(exports.require.myBean.instances()); //return multiple instances 
+			console.log(exports.require.myBean.instance); //return a single instance
+			console.log(exports.require.myBean.instances); //return multiple instances 
 		}
 	}
 }
