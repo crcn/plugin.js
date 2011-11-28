@@ -5,7 +5,7 @@
 - Modularity - encourages code-reuse, abstraction, and encapsulation
 - Easily drop plugins in and out without breaking your program
 - Maintainability
-- Easily customize how modules are loaded in - ability to create haba loaders for dnode, now.js, etc.
+- *soon* asyncronously load remote plugins via [dnode](substack/dnode), [now.js](Flotype/now), [beanpoll](crcn/beanpole), etc.
 
 ## Basic Usage
 
