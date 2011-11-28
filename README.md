@@ -3,9 +3,9 @@
 ### Motivation
 
 - Modularity - encourages code-reuse, abstraction, and encapsulation
-- Easily drop plugin in and out without effecting your program
+- Easily drop plugins in and out without breaking your program
 - Maintainability
-- Gives your projects a bit of structure
+- Easily customize how modules are loaded in - ability to create haba loaders for dnode, now.js, etc.
 
 ## Basic Usage
 
