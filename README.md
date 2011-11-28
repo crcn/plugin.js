@@ -5,7 +5,7 @@
 - Modularity - encourages code-reuse, abstraction, and encapsulation
 - Easily drop plugins in and out without breaking your program
 - Maintainability
-- *soon* asyncronously load remote plugins via [dnode](/substack/dnode), [now.js](Flowtype/now), [beanpoll](/beanpole), etc.
+- *soon* asyncronously load remote plugins via [dnode](/substack/dnode), [now.js](/flotype/now), [beanpoll](/beanpole), etc.
 
 ## Basic Usage
 
