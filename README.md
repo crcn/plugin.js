@@ -240,7 +240,8 @@ Optional name for the plugin. The default value is name provided when requiring 
 Called when the plugin is loaded. 
 
 - `options` - options which are passed to the plugin, along with every other plugin.
-- `params` - parameters which are specific to the loaded plugin
+- `params` - parameters which are specific to the loaded plugin.
+- `haba` - the haba loader. Also accessible via `this`.
 - return type can be `void`, or an `object`.
 
 
