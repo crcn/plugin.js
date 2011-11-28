@@ -12,5 +12,6 @@
   "devDependencies": {
     "express":"*"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "main": "./lib/index.js"
 }
