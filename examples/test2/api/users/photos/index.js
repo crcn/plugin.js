@@ -4,7 +4,7 @@ exports.require = 'api.users';
 exports.plugin = function() {
 	return {
 		init: function() {
-			this.require["api.users"].module.getUser(function(user) {
+			this.require["api.users"].plugin.getUser(function(user) {
 				console.log(user);
 			})
 		}
