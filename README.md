@@ -39,7 +39,7 @@ exports.plugin = function(server) {
 ```
 
 
-## Beans API
+## Haba API
 
 ### haba.require(path)
 
