@@ -235,7 +235,7 @@ exports.plugin = function() {
 Optional name for the plugin. The default value is name provided when requiring the plugin.
 
 
-### Plugin exports.plugin(options, params)
+### Plugin exports.plugin(options, params, haba)
 
 Called when the plugin is loaded. 
 
