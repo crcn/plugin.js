@@ -146,7 +146,7 @@ Wrapper for `haba.call("init")`
 
 ### haba.plugin(search)
 
-Returns a *single* based on the search criteria given
+Returns a *single* based on the search criteria given.
 
 boostrap.js:
 
@@ -186,7 +186,39 @@ exports.plugin = function() {
 
 ## haba.plugins(search)
 
-Returns *multiple* plugins based on the search criteria
+Returns *multiple* plugins based on the search criteria.
+
+## haba.loaders
+
+Loads plugins passed into `haba.require()`.
+
+```javascript
+
+//dnode plugin
+haba.loaders.push({
+	test: function(path) {
+		return !!path.match(/dnode+\w+:\/\//); //dnode+https://my-dnode-server.com
+	},
+	load: function(path, callback) {
+		//load dnode module here
+	}
+});
+
+```
+
+## haba.newPlugin
+
+Plugin factory for haba. Setting this method will change the way modules are loaded in.
+
+```javascript
+
+
+haba.newPlugin = function(module, options, params) {	
+	return module(options, params); //instead of exports.plugin = function(){}, it would be module.exports = function(options, params)
+};
+
+```
+
 
 
 ## Plugins API
