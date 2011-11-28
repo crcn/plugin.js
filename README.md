@@ -6,6 +6,7 @@
 - Easily drop plugins in and out without breaking your program
 - Maintainability
 - *soon* asyncronously load remote plugins via [dnode](/substack/dnode), [now.js](/flotype/now), [hookio](/hookio/hook.io), [beanpoll](beanpole), etc.
+- *soon* double as online async module loader (similar to [head](https://github.com/headjs/headjs).
 
 ## Basic Usage
 
