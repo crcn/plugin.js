@@ -243,7 +243,7 @@ You can also load in any given plugin via `exports.require`:
 ```javascript
 
 exports.require = {
-	'myBean' : 'api.services.photos.*'
+	'myPlugin' : 'api.services.photos.*'
 };
 
 
@@ -252,8 +252,8 @@ exports.plugin = function() {
 	return {
 		init: function() {
 			
-			console.log(this.require.myBean.plugin); //return a single instance
-			console.log(this.require.myBean.plugins); //return multiple instances 
+			console.log(this.require.myPlugin.plugin); //return a single instance
+			console.log(this.require.myPlugin.plugins); //return multiple instances 
 		}
 	}
 }
