@@ -8,7 +8,9 @@
     "url": "git://github.com/crcn/haba.git"
   },
   "dependencies": {
-    "fglob":"*"
+  },
+  "devDependencies": {
+    "express":"*"
   },
   "devDependencies": {}
 }
