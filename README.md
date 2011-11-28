@@ -13,10 +13,10 @@ A simple use case with express:
 
 ```javascript
 
-var haba = require('haba'),
+var haba = require('haba')(),
 server = require('express').createServer();
 
-haba.options(server).
+haba.options(server, true).
 require("path/to/plugins/dir");
 
 server.listen(8080);
