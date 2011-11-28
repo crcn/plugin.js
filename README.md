@@ -173,9 +173,7 @@ exports.plugin = function() {
 plugin2.js
 
 ```javascript
-
 exports.plugin = function() {
-	
 	return {
 		sayHello: function() {
 			console.log('hello!');
@@ -184,16 +182,15 @@ exports.plugin = function() {
 }
 ```
 
-## haba.plugins(search)
+### haba.plugins(search)
 
 Returns *multiple* plugins based on the search criteria.
 
-## haba.loaders
+### haba.loaders
 
 Loads plugins passed into `haba.require()`.
 
 ```javascript
-
 //dnode plugin
 haba.loaders.push({
 	test: function(path) {
@@ -203,10 +200,9 @@ haba.loaders.push({
 		//load dnode module here
 	}
 });
-
 ```
 
-## haba.newPlugin
+### haba.newPlugin
 
 Plugin factory for haba. Setting this method will change the way modules are loaded in.
 
