@@ -7,6 +7,8 @@
     "type": "git",
     "url": "git://github.com/crcn/haba.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fglob":"*"
+  },
   "devDependencies": {}
 }
