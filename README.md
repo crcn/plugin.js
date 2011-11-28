@@ -3,7 +3,7 @@
 ### Motivation
 
 - Modularity - encourages code-reuse, abstraction, and encapsulation
-- Easily drop "bean" in and out without effecting your program
+- Easily drop plugin in and out without effecting your program
 - Maintainability
 - Gives your projects a bit of structure
 
@@ -13,17 +13,17 @@ A simple use case with express:
 
 ```javascript
 
-var bean = require('bean'),
+var haba = require('haba'),
 server = require('express').createServer();
 
-bean.options(server).
-require("path/to/beans/dir");
+haba.options(server).
+require("path/to/plugins/dir");
 
 server.listen(8080);
 
 ```
 
-In your `hello world` bean:
+In your `hello world` plugin:
 
 ```javascript
 
@@ -40,42 +40,42 @@ exports.plugin = function(server) {
 
 ## Beans API
 
-### bean.require(path)
+### haba.require(path)
 
-requires a given bean
+requires a given haba
 
 ```javascript
-beans.require('path/to/bean.js').      // require one bean
-require('path/to/beans/dir').          // require all beans in directory
-require('path/to/beans/**/*.bean.js'). // find beans, and load them
+plugins.require('path/to/plugin.js').      // require one plugin
+require('path/to/plugins/dir').          // require all plugins in directory
+require('path/to/plugins/**/*.plugin.js'). // find plugins, and load them
 require({							   // include obj
-	name: 'my.bean',
+	name: 'my.plugin',
 	plugin: function() {
 		
 	}
 }).
-require('bean1.js','bean2.js','bean3.js'). //multiple bean args
-require('./package.json'). //load beans in configuration file { beans: ['my/bean.js','...'] }
+require('plugin1.js','plugin2.js','plugin3.js'). //multiple plugin args
+require('./package.json'). //load plugins in configuration file { plugins: ['my/plugin.js','...'] }
 ```
 
-### bean.paths(path)
+### haba.paths(path)
 
-adds a path to scan when requiring beans. Similar to the old `require.paths.unshift`
+adds a path to scan when requiring plugins. Similar to the old `require.paths.unshift`
 
 ```javascript
-bean.paths('/path/to/beans').require('my-bean');
+haba.paths('/path/to/plugins').require('my-plugin');
 
-console.log(bean.paths());// ['/path/to/beans','/path/to/node_modules','...'];
+console.log(haba.paths());// ['/path/to/plugins','/path/to/node_modules','...'];
 ```
 
-### bean.params(params)
+### haba.params(params)
 
-params specific to bean - like constructor parameters
+params specific to plugin - like constructor parameters
 
 bootstrap.js:
 
 ```javascript
-bean.params({
+haba.params({
 	'api.server': {
 		'port': 8080
 	}
@@ -95,14 +95,14 @@ exports.plugin = function(ops, params) {
 ```
 
 
-### bean.options(ops)
+### haba.options(ops)
 
 Adds / returns options which as passed in the first parameter for each plugin.
 
 bootstrap.js:
 
 ```javascript
-bean.options({ message: 'hello world!' }).require('hello.plugin.js');
+haba.options({ message: 'hello world!' }).require('hello.plugin.js');
 ```
 
 hello.plugin.js:
@@ -113,14 +113,14 @@ exports.plugin = function(ops) {
 }
 ```
 
-### bean.call(method)
+### haba.call(method)
 
-Calls a method against all loaded beans. If the method doesn't exist, it'll be ignored.
+Calls a method against all loaded plugins. If the method doesn't exist, it'll be ignored.
 
 bootstrap.js:
 
 ```javascript
-bean.require('api.server').call("prepare").call("init");
+haba.require('api.server').call("prepare").call("init");
 ```
 
 api.server/index.js:
@@ -139,38 +139,38 @@ exports.plugin = function() {
 }
 ```
 
-### bean.init()
+### haba.init()
 
-Wrapper for `bean.call("init")`
+Wrapper for `haba.call("init")`
 
 
-### bean.plugin(search)
+### haba.plugin(search)
 
 Returns a *single* based on the search criteria given
 
 boostrap.js:
 
 ```javascript
-bean.require('bean1.js','bean2.js').init();
+haba.require('plugin1.js','plugin2.js').init();
 ```
 
-bean1.js:
+plugin1.js:
 
 ```javascript
 
 exports.plugin = function() {
 	
-	var bean = this;
+	var haba = this;
 
 	return {
 		init: function() {
-			bean.plugin('bean2').sayHello();
+			haba.plugin('plugin2').sayHello();
 		}
 	}
 }
 ```
 
-bean2.js
+plugin2.js
 
 ```javascript
 
@@ -184,7 +184,7 @@ exports.plugin = function() {
 }
 ```
 
-## bean.plugins(search)
+## haba.plugins(search)
 
 Returns *multiple* plugins based on the search criteria
 
@@ -194,11 +194,11 @@ Returns *multiple* plugins based on the search criteria
 
 ### exports.require
 
-Dependencies for the given bean. This is checked once `bean.call`, or `bean.init` is invoked. An exception is thrown if there are any missing dependencies.
+Dependencies for the given haba. This is checked once `haba.call`, or `haba.init` is invoked. An exception is thrown if there are any missing dependencies.
 
 ```javascript
 
-exports.require = ['api.services.photos.*','another-bean']; //requires any photo services. E.g: api.services.photos.facebook, api.services.photos.flickr
+exports.require = ['api.services.photos.*','another-plugin']; //requires any photo services. E.g: api.services.photos.facebook, api.services.photos.flickr
 
 exports.require = [/api\.\w+/]; //regexp test
 
@@ -209,7 +209,7 @@ exports.require = function(name) { //function test
 
 ```
 
-You can also load in any given bean via `exports.require`:
+You can also load in any given plugin via `exports.require`:
 
 ```javascript
 
