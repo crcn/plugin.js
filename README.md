@@ -43,7 +43,7 @@ exports.plugin = function(server) {
 
 ### haba.require(path)
 
-requires a given haba
+includes target dependencies
 
 ```javascript
 plugins.require('path/to/plugin.js').      // require one plugin
@@ -224,7 +224,7 @@ haba.newPlugin = function(module, options, params) {
 
 ### exports.require
 
-Dependencies for the given haba. This is checked once `haba.call`, or `haba.init` is invoked. An exception is thrown if there are any missing dependencies.
+Dependencies for the given plugin. This is checked once `haba.call`, or `haba.init` is invoked. An exception is thrown if there are any missing dependencies.
 
 ```javascript
 
