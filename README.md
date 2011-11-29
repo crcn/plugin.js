@@ -5,7 +5,7 @@
 - Modularity - encourages code-reuse, abstraction, and encapsulation
 - Easily drop plugins in and out without breaking your program
 - Maintainability
-- *soon* asyncronously load remote plugins via [dnode](/substack/dnode), [now.js](/flotype/now), [beanpoll](beanpole), etc.
+- Asyncronously load remote plugins via [dnode](/substack/dnode) (*soon* - [now.js](/flotype/now), [beanpoll](beanpole)). 
 - *soon* double as online async module loader (similar to [head](https://github.com/headjs/headjs)).
 
 ## Basic Usage
@@ -225,7 +225,6 @@ haba.newPlugin = function(module, options, params) {
 ```
 
 
-
 ## Plugins API
 
 
@@ -282,6 +281,66 @@ Called when the plugin is loaded.
 - `params` - parameters which are specific to the loaded plugin.
 - `haba` - the haba loader. Also accessible via `this`.
 - return type can be `void`, or an `object`.
+
+
+## DNode Setup
+
+
+### DNode server
+
+server.js:
+
+```javascript
+var dnode = require('dnode');
+
+require('haba')().
+require('/path/to/modules').
+init(function() {
+	dnode(haba.methods).listen(5050);
+});
+```
+
+server/dnode/hello.server.js:
+
+```javascript
+exports.plugin = function() {
+	return {
+		sayHello: function(callback) {
+			callback('Hello World!');
+		}
+	}
+}
+```
+
+### DNode client
+
+client.js:
+
+```javascript
+require('haba')().
+require('dnode+http://localhost:5050').
+require('/path/to/modules').
+init();
+```
+
+
+client/dnode/hello.client.js:
+
+```javascript
+exports.require = 'hello.server';
+
+exports.plugin = function() {
+	var haba = this;
+	
+	return {
+		init: function() {
+			haba.plugin(exports.require).sayHello(message) {
+				console.log(message);//Hello World!
+			}
+		}
+	}
+}
+```
 
 
 
