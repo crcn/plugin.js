@@ -3,7 +3,7 @@ exports.plugin = function() {
 	
 	return {
 		sayHello: function(callback) {
-			callback('Hello World!');	
+			callback('Hello DNode!');	
 		}
 	};
 }

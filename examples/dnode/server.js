@@ -3,8 +3,9 @@ haba = require('../../lib')();
 
 haba.require(__dirname + '/server-plugins').
 next(function() {
-	dnode(haba.plugin('dnode')).listen(5050);
-});
+	dnode(haba.methods).listen(5050);
+}).
+init();
 
 /*var server = dnode({
 	sayHello: function(callback) {
