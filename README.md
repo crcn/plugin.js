@@ -294,13 +294,13 @@ server.js:
 var dnode = require('dnode');
 
 require('haba')().
-require('/path/to/modules').
+require(__dirname + '/server/plugins').
 init(function() {
 	dnode(haba.methods).listen(5050);
 });
 ```
 
-server/dnode/hello.server.js:
+server/plugins/hello.server.js:
 
 ```javascript
 exports.plugin = function() {
@@ -319,12 +319,12 @@ client.js:
 ```javascript
 require('haba')().
 require('dnode+http://localhost:5050').
-require('/path/to/modules').
+require(__dirname + '/client/plugins').
 init();
 ```
 
 
-client/dnode/hello.client.js:
+client/plugins/hello.client.js:
 
 ```javascript
 exports.require = 'hello.server';
