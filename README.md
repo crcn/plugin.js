@@ -145,6 +145,13 @@ exports.plugin = function() {
 
 Wrapper for `haba.call("init")`
 
+### haba.next(callback)
+
+Queue function called after loading in all modules
+
+### haba.methods
+
+All the invokable methods against modules
 
 ### haba.plugin(search)
 

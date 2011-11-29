@@ -2,12 +2,13 @@
   "author": "Craig Condon",
   "name": "haba",
   "description": "Plugin library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/crcn/haba.git"
   },
   "dependencies": {
+    "dnode":"0.9.2"
   },
   "devDependencies": {
     "express":"*"
