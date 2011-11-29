@@ -290,7 +290,7 @@ var dnode = require('dnode');
 require('haba')().
 require(__dirname + '/server/plugins').
 init(function() {
-	dnode(haba.methods).listen(5050);
+	dnode(haba.plugin('dnode')).listen(5050);
 });
 ```
 
