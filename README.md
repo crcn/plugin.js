@@ -250,18 +250,20 @@ You can also load in any given plugin via `exports.require`:
 
 ```javascript
 
-exports.require = {
-	'myPlugin' : 'api.services.photos.*'
-};
+exports.require = 'my-plugin';
 
 
 exports.plugin = function() {
 	
+	var haba = this;
+
 	return {
 		init: function() {
 			
-			console.log(this.require.myPlugin.plugin); //return a single instance
-			console.log(this.require.myPlugin.plugins); //return multiple instances 
+			haba.plugin('my-plugin').doStuff();//return a single instance
+			haba.plugins('my-plugin').forEach(funtion(plugin) {//return multiple instances
+				plugin.doStuff();
+			});
 		}
 	}
 }
