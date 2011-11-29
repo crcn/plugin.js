@@ -1,9 +1,12 @@
 exports.require = 'hello.dnode';
 
 exports.plugin = function(ops, params) {
+
+	var haba = this;
+
 	return {
 		init: function() {
-			this.require['hello.dnode'].plugin.sayHello(function(response) {
+			haba.plugin('hello.dnode').sayHello(function(response) {
 				console.log(response)
 			});
 		}
