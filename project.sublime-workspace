@@ -8,87 +8,13 @@
 	"buffers":
 	[
 		{
-			"contents": "",
-			"file": "/tmp/subl stdin 62uD9w.txt",
-			"file_size": -1,
-			"file_write_time": -1,
+			"contents": "exports.plugin = function() {\n	\n	return {\n		'start-dnode': function() {\n			\n		}\n	}\n}",
+			"file": "examples/dnode/server-plugins/dnode.server.js",
+			"file_size": 84,
+			"file_write_time": 1322539236000000,
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "examples/test2/api/users/index.js",
-			"settings":
-			{
-				"buffer_size": 159,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "examples/test2/index.js",
-			"settings":
-			{
-				"buffer_size": 83,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "examples/test2/api/users/photos/index.js",
-			"settings":
-			{
-				"buffer_size": 226,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lib/index.js",
-			"settings":
-			{
-				"buffer_size": 2639,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lib/core.js",
-			"settings":
-			{
-				"buffer_size": 5578,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lib/web.js",
-			"settings":
-			{
-				"buffer_size": 87,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lib/loaders/now.js",
-			"settings":
-			{
-				"buffer_size": 217,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "exports.name = 'dnode loader';\n\nexports.plugin = function() {\n	this.loaders.push({\n		test: function(path) { \n			return !!path.match(/hookio\\+\\w+:\\/\\//);\n		},\n		load: function(path, callback) {\n			//load dnode\n		}\n	})\n}",
-			"file": "lib/loaders/hookio.js",
-			"file_size": 133,
-			"file_write_time": 1322513361000000,
-			"settings":
-			{
-				"buffer_size": 218,
+				"buffer_size": 84,
 				"line_ending": "Unix"
 			}
 		},
@@ -96,47 +22,31 @@
 			"file": "lib/loaders/dnode.js",
 			"settings":
 			{
-				"buffer_size": 264,
+				"buffer_size": 807,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "examples/dnode/index.js",
+			"file": "lib/plugins/authorize.js",
 			"settings":
 			{
-				"buffer_size": 88,
+				"buffer_size": 189,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "lib/loaders/beanpoll.js",
+			"file": "examples/dnode/client.js",
 			"settings":
 			{
-				"buffer_size": 220,
+				"buffer_size": 136,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "lib/queue.js",
+			"file": "examples/dnode/server.js",
 			"settings":
 			{
-				"buffer_size": 487,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "project.sublime-project",
-			"settings":
-			{
-				"buffer_size": 268,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 316,
+				"buffer_size": 266,
 				"line_ending": "Unix"
 			}
 		},
@@ -144,50 +54,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 5356,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "examples/test1/index.js",
-			"settings":
-			{
-				"buffer_size": 172,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "",
-			"file": "/tmp/subl stdin ZshK9R.txt",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/tmp/subl stdin gYzqGJ.txt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "examples/test1/plugins/hello1.js",
-			"settings":
-			{
-				"buffer_size": 206,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "examples/test1/plugins/hello2.js",
-			"settings":
-			{
-				"buffer_size": 98,
+				"buffer_size": 6219,
 				"line_ending": "Unix"
 			}
 		}
@@ -216,6 +83,40 @@
 	},
 	"file_history":
 	[
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test1/plugins/hello1.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/plugins/remote.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/queue.js",
+		"/tmp/subl stdin gYzqGJ.txt",
+		"/tmp/subl stdin ZshK9R.txt",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/dnode/server-plugins/sayHello.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/index.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/dnode/client-plugins/hello.client.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test1/plugins/hello2.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/dnode/index.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/dnode/dnode-server.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/remote/now-client",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/remote/dnode-server.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/remote/now-client.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/remote/client.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/remote/now-server.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/dnode/server-plugins/hello.dnode.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/package.json",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/core.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/dnode/server.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test1/index.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/plugins/hooks.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/README.md",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/loaders/now.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/loaders/hookio.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/loaders/dnode.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/loaders/beanpoll.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/web.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test2/api/users/photos/index.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test2/index.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test2/api/users/index.js",
+		"/tmp/subl stdin 62uD9w.txt",
+		"/tmp/subl stdin be5qUw.txt",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/project.sublime-project",
 		"/Users/craigcondon/Dropbox/Developer/Public/haba/examples/test.js",
 		"/Users/craigcondon/Dropbox/Developer/Public/haba/examples/test1/bootstrap.js",
 		"/Users/craigcondon/Dropbox/Developer/Public/haba/examples/test1/plugins/hello2.js",
@@ -238,6 +139,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"given ha",
+			"console.l",
+			"addMethods",
+			"plugins",
+			"require",
+			"start",
+			"basename",
+			"next",
+			"initModules",
+			"require",
+			"plugins'",
+			"plugins",
+			"call",
 			"fs.",
 			"web.js",
 			"fileExists",
@@ -272,28 +186,28 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/tmp/subl stdin 62uD9w.txt",
+					"file": "examples/dnode/server-plugins/dnode.server.js",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 84,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								75,
+								75
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -303,23 +217,24 @@
 				},
 				{
 					"buffer": 1,
+					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 807,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								575,
+								575
 							]
 						],
 						"settings":
 						{
-							"default_dir": "/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test2/plugins",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -329,10 +244,62 @@
 				},
 				{
 					"buffer": 2,
-					"file": "examples/test2/api/users/index.js",
+					"file": "lib/plugins/authorize.js",
 					"settings":
 					{
-						"buffer_size": 159,
+						"buffer_size": 189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								63
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "examples/dnode/client.js",
+					"settings":
+					{
+						"buffer_size": 136,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "examples/dnode/server.js",
+					"settings":
+					{
+						"buffer_size": 266,
 						"regions":
 						{
 						},
@@ -354,365 +321,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "examples/test2/index.js",
-					"settings":
-					{
-						"buffer_size": 83,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								83
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "examples/test2/api/users/photos/index.js",
-					"settings":
-					{
-						"buffer_size": 226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								127,
-								127
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 5,
-					"file": "lib/index.js",
-					"settings":
-					{
-						"buffer_size": 2639,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								536,
-								536
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "lib/core.js",
-					"settings":
-					{
-						"buffer_size": 5578,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3768,
-								3768
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3069.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "lib/web.js",
-					"settings":
-					{
-						"buffer_size": 87,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								37,
-								37
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "lib/loaders/now.js",
-					"settings":
-					{
-						"buffer_size": 217,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								156,
-								156
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "lib/loaders/hookio.js",
-					"settings":
-					{
-						"buffer_size": 218,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								218,
-								218
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "lib/loaders/dnode.js",
-					"settings":
-					{
-						"buffer_size": 264,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								216,
-								216
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "examples/dnode/index.js",
-					"settings":
-					{
-						"buffer_size": 88,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								88,
-								88
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "lib/loaders/beanpoll.js",
-					"settings":
-					{
-						"buffer_size": 220,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								220
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "lib/queue.js",
-					"settings":
-					{
-						"buffer_size": 487,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								415,
-								415
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "project.sublime-project",
-					"settings":
-					{
-						"buffer_size": 268,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "package.json",
-					"settings":
-					{
-						"buffer_size": 316,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								210,
-								210
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 5356,
+						"buffer_size": 6219,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1200,
-								1200
+								5592,
+								5592
 							]
 						],
 						"settings":
@@ -721,137 +342,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 312.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "examples/test1/index.js",
-					"settings":
-					{
-						"buffer_size": 172,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								134,
-								134
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "/tmp/subl stdin ZshK9R.txt",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "/tmp/subl stdin gYzqGJ.txt",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "examples/test1/plugins/hello1.js",
-					"settings":
-					{
-						"buffer_size": 206,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								123,
-								123
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "examples/test1/plugins/hello2.js",
-					"settings":
-					{
-						"buffer_size": 98,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								87,
-								87
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4934.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
