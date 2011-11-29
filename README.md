@@ -50,12 +50,6 @@ plugins.require('path/to/plugin.js').      // require one plugin
 require('path/to/plugins/dir').          // require all plugins in directory
 require('path/to/plugins/**/*.plugin.js'). // find plugins, and load them
 require('dnode+https://localhost:9090'). // plugin another server
-require({							   // include obj
-	name: 'my.plugin',
-	plugin: function() {
-		
-	}
-}).
 require('plugin1.js','plugin2.js','plugin3.js'). //multiple plugin args
 require('./package.json'). //load plugins in configuration file { plugins: ['my/plugin.js','...'] }
 ```
