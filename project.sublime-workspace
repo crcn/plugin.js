@@ -22,15 +22,18 @@
 			"file": "lib/loaders/dnode.js",
 			"settings":
 			{
-				"buffer_size": 807,
+				"buffer_size": 948,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"contents": "exports.plugin = function() {\n	var haba = this,\n	credits = {};\n\n	haba.authorize = function(user, pass) {\n		return !credits || (credits.user == user && credits.pass == pass);\n	}\n\n	haba.credentials = function(user, pass) {\n		if(!arguments.length) return credits;\n\n		if(typeof user == 'object') {\n			credits = user;\n		} else {\n			credits = { user: user, pass: pass };\n		}\n\n		return this;\n	}\n}",
 			"file": "lib/plugins/authorize.js",
+			"file_size": 389,
+			"file_write_time": 1322550122000000,
 			"settings":
 			{
-				"buffer_size": 189,
+				"buffer_size": 389,
 				"line_ending": "Unix"
 			}
 		},
@@ -46,7 +49,7 @@
 			"file": "examples/dnode/server.js",
 			"settings":
 			{
-				"buffer_size": 266,
+				"buffer_size": 294,
 				"line_ending": "Unix"
 			}
 		},
@@ -55,6 +58,22 @@
 			"settings":
 			{
 				"buffer_size": 6219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin qLosJn.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/core.js",
+			"settings":
+			{
+				"buffer_size": 6662,
 				"line_ending": "Unix"
 			}
 		}
@@ -139,6 +158,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"paths'",
+			"paths",
 			"given ha",
 			"console.l",
 			"addMethods",
@@ -186,7 +207,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -220,15 +241,15 @@
 					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
-						"buffer_size": 807,
+						"buffer_size": 948,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								575,
-								575
+								755,
+								755
 							]
 						],
 						"settings":
@@ -247,20 +268,21 @@
 					"file": "lib/plugins/authorize.js",
 					"settings":
 					{
-						"buffer_size": 189,
+						"buffer_size": 389,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								54,
-								63
+								91,
+								91
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -280,8 +302,8 @@
 						"selection":
 						[
 							[
-								136,
-								136
+								110,
+								110
 							]
 						],
 						"settings":
@@ -299,15 +321,15 @@
 					"file": "examples/dnode/server.js",
 					"settings":
 					{
-						"buffer_size": 266,
+						"buffer_size": 294,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								150,
-								150
+								134,
+								134
 							]
 						],
 						"settings":
@@ -343,6 +365,59 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 4934.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/tmp/subl stdin qLosJn.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "lib/core.js",
+					"settings":
+					{
+						"buffer_size": 6662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2073,
+								2073
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1529.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
