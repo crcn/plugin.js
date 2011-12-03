@@ -27,6 +27,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin 7iZL2z.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"contents": "exports.plugin = function() {\n	var haba = this,\n	credits = {};\n\n	haba.authorize = function(user, pass) {\n		return !credits || (credits.user == user && credits.pass == pass);\n	}\n\n	haba.credentials = function(user, pass) {\n		if(!arguments.length) return credits;\n\n		if(typeof user == 'object') {\n			credits = user;\n		} else {\n			credits = { user: user, pass: pass };\n		}\n\n		return this;\n	}\n}",
 			"file": "lib/plugins/authorize.js",
 			"file_size": 389,
@@ -76,6 +84,14 @@
 				"buffer_size": 6662,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "lib/loaders/now.js",
+			"settings":
+			{
+				"buffer_size": 262,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -102,9 +118,10 @@
 	},
 	"file_history":
 	[
+		"/tmp/subl stdin AwNZ4c.txt",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/queue.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test1/plugins/hello1.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/plugins/remote.js",
-		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/queue.js",
 		"/tmp/subl stdin gYzqGJ.txt",
 		"/tmp/subl stdin ZshK9R.txt",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/dnode/server-plugins/sayHello.js",
@@ -207,7 +224,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -265,6 +282,32 @@
 				},
 				{
 					"buffer": 2,
+					"file": "/tmp/subl stdin 7iZL2z.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "lib/plugins/authorize.js",
 					"settings":
 					{
@@ -291,7 +334,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "examples/dnode/client.js",
 					"settings":
 					{
@@ -317,7 +360,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "examples/dnode/server.js",
 					"settings":
 					{
@@ -343,7 +386,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "README.md",
 					"settings":
 					{
@@ -370,7 +413,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "/tmp/subl stdin qLosJn.txt",
 					"settings":
 					{
@@ -396,7 +439,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "lib/core.js",
 					"settings":
 					{
@@ -417,7 +460,33 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1529.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "lib/loaders/now.js",
+					"settings":
+					{
+						"buffer_size": 262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								9
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
