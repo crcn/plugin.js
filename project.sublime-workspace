@@ -81,7 +81,15 @@
 			"file": "lib/core.js",
 			"settings":
 			{
-				"buffer_size": 6662,
+				"buffer_size": 6694,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin QVEDns.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -175,6 +183,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"params",
 			"paths'",
 			"paths",
 			"given ha",
@@ -443,15 +452,15 @@
 					"file": "lib/core.js",
 					"settings":
 					{
-						"buffer_size": 6662,
+						"buffer_size": 6694,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2073,
-								2073
+								2106,
+								2106
 							]
 						],
 						"settings":
@@ -460,13 +469,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1425.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 9,
+					"file": "/tmp/subl stdin QVEDns.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "lib/loaders/now.js",
 					"settings":
 					{
