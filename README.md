@@ -121,9 +121,9 @@ haba.onLoad('my.plugin', function() {
 }).require('my.plugin');
 ```
 
-### haba.call(method)
+### haba.emit(type, data)
 
-Calls a method against all loaded plugins. If the method doesn't exist, it'll be ignored.
+emits a method against all loaded plugins. If the method doesn't exist, it'll be ignored.
 
 bootstrap.js:
 
