@@ -109,6 +109,18 @@ exports.plugin = function(ops) {
 }
 ```
 
+### haba.onReady(pluginSearch, callback)
+
+Listens for when a plugin is ready - useful especially if a dnode server resets
+
+```javascript
+
+haba.onReady('my.plugin', function() {
+	
+	console.log("ready!");
+}).require('my.plugin');
+```
+
 ### haba.call(method)
 
 Calls a method against all loaded plugins. If the method doesn't exist, it'll be ignored.
