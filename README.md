@@ -121,6 +121,10 @@ haba.onLoad('my.plugin', function() {
 }).require('my.plugin');
 ```
 
+### haba.local haba.remote
+
+remote/local collections. Same api as haba (emit, plugin, plugins)
+
 ### haba.emit(type, data)
 
 emits a method against all loaded plugins. If the method doesn't exist, it'll be ignored.
