@@ -109,13 +109,13 @@ exports.plugin = function(ops) {
 }
 ```
 
-### haba.onReady(pluginSearch, callback)
+### haba.onLoad(pluginSearch, callback)
 
 Listens for when a plugin is ready - useful especially if a dnode server resets
 
 ```javascript
 
-haba.onReady('my.plugin', function() {
+haba.onLoad('my.plugin', function() {
 	
 	console.log("ready!");
 }).require('my.plugin');
