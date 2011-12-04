@@ -19,14 +19,6 @@
 			}
 		},
 		{
-			"file": "lib/loaders/dnode.js",
-			"settings":
-			{
-				"buffer_size": 948,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "/tmp/subl stdin 7iZL2z.txt",
 			"settings":
 			{
@@ -62,26 +54,10 @@
 			}
 		},
 		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 6219,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "/tmp/subl stdin qLosJn.txt",
 			"settings":
 			{
 				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "lib/core.js",
-			"settings":
-			{
-				"buffer_size": 6694,
 				"line_ending": "Unix"
 			}
 		},
@@ -126,6 +102,11 @@
 	},
 	"file_history":
 	[
+		"/tmp/subl stdin oAG1w4.txt",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/node_modules/dnode/index.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/core.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/loaders/dnode.js",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/README.md",
 		"/tmp/subl stdin AwNZ4c.txt",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/queue.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test1/plugins/hello1.js",
@@ -145,14 +126,11 @@
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/remote/now-server.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/dnode/server-plugins/hello.dnode.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/package.json",
-		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/core.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/dnode/server.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test1/index.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/plugins/hooks.js",
-		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/README.md",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/loaders/now.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/loaders/hookio.js",
-		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/loaders/dnode.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/loaders/beanpoll.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/lib/web.js",
 		"/Volumes/minimac/Users/craig/Dropbox/Developer/Public/haba/examples/test2/api/users/photos/index.js",
@@ -233,7 +211,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -264,33 +242,6 @@
 				},
 				{
 					"buffer": 1,
-					"file": "lib/loaders/dnode.js",
-					"settings":
-					{
-						"buffer_size": 948,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								755,
-								755
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "/tmp/subl stdin 7iZL2z.txt",
 					"settings":
 					{
@@ -316,7 +267,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "lib/plugins/authorize.js",
 					"settings":
 					{
@@ -343,7 +294,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "examples/dnode/client.js",
 					"settings":
 					{
@@ -369,7 +320,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "examples/dnode/server.js",
 					"settings":
 					{
@@ -395,34 +346,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "README.md",
-					"settings":
-					{
-						"buffer_size": 6219,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5592,
-								5592
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4934.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "/tmp/subl stdin qLosJn.txt",
 					"settings":
 					{
@@ -448,34 +372,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "lib/core.js",
-					"settings":
-					{
-						"buffer_size": 6694,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2106,
-								2106
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1425.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
+					"buffer": 6,
 					"file": "/tmp/subl stdin QVEDns.txt",
 					"settings":
 					{
@@ -501,7 +398,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 7,
 					"file": "lib/loaders/now.js",
 					"settings":
 					{
