@@ -109,7 +109,7 @@ exports.plugin = function(ops) {
 }
 ```
 
-### haba.onLoad(pluginSearch, callback)
+### haba.onLoad(pluginSearch, ret, callback)
 
 Listens for when a plugin is ready - useful especially if a dnode server resets
 
@@ -128,7 +128,7 @@ emits a method against all loaded plugins. If the method doesn't exist, it'll be
 bootstrap.js:
 
 ```javascript
-haba.require('api.server').call("prepare").call("init");
+haba.require('api.server').emit("prepare").emit("init");
 ```
 
 api.server/index.js:
@@ -149,7 +149,7 @@ exports.plugin = function() {
 
 ### haba.init()
 
-Wrapper for `haba.call("init")`
+Wrapper for `haba.emit("init")`
 
 ### haba.next(callback)
 
