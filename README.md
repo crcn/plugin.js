@@ -14,7 +14,7 @@ A simple use case with express:
 
 ```javascript
 
-var haba = require('haba')(),
+var haba = require('haba').loader(),
 server = require('express').createServer();
 
 haba.options(server, true).
@@ -38,6 +38,10 @@ exports.plugin = function(server) {
 
 ```
 
+## Plugins
+
+- [haba.dnode](/crcn/haba.dnode) - dnode plugin
+
 
 ## Haba API
 
@@ -49,9 +53,8 @@ includes target dependencies
 plugins.require('path/to/plugin.js').      // require one plugin
 require('path/to/plugins/dir').          // require all plugins in directory
 require('path/to/plugins/**/*.plugin.js'). // find plugins, and load them
-require('dnode+https://localhost:9090'). // plugin another server
 require('plugin1.js','plugin2.js','plugin3.js'). //multiple plugin args
-require('./package.json'). //load plugins in configuration file { plugins: ['my/plugin.js','...'] }
+require('./package.json').init(); //load plugins in configuration file { plugins: ['my/plugin.js','...'] }
 ```
 
 ### haba.paths(path)
@@ -303,7 +306,7 @@ server.js:
 ```javascript
 var dnode = require('dnode');
 
-require('haba')().
+require('haba').loader().
 require(__dirname + '/server/plugins').
 init(function() {
 	dnode(haba.plugin('dnode')).listen(5050);

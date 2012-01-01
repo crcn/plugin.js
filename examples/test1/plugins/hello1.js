@@ -5,9 +5,12 @@ exports.require = {
 exports.plugin = function(ops, params) {
 	console.log(ops);
 	console.log(params);
+
+	var haba = this;
+
 	return {
 		init: function() {
-			this.require.hello2.plugin.sayHello();
+			haba.plugin('hello2').sayHello();
 		}
 	};
 }

@@ -94,6 +94,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin krTypp.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "lib/nameTester.js",
 			"settings":
 			{
@@ -113,7 +121,7 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 2765,
+				"buffer_size": 2861,
 				"line_ending": "Unix"
 			}
 		},
@@ -290,7 +298,7 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -557,6 +565,32 @@
 				},
 				{
 					"buffer": 10,
+					"file": "/tmp/subl stdin krTypp.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
 					"file": "lib/nameTester.js",
 					"settings":
 					{
@@ -583,7 +617,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "lib/collection.js",
 					"settings":
 					{
@@ -600,7 +634,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 1622.0,
@@ -609,19 +644,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 2765,
+						"buffer_size": 2861,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								183,
-								183
+								0,
+								0
 							]
 						],
 						"settings":
@@ -636,7 +671,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "README.md",
 					"settings":
 					{
@@ -663,7 +698,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
@@ -690,7 +725,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
 					"file": "package.json",
 					"settings":
 					{
