@@ -102,6 +102,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin bi7TwN.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "lib/nameTester.js",
 			"settings":
 			{
@@ -121,7 +129,7 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 2861,
+				"buffer_size": 2838,
 				"line_ending": "Unix"
 			}
 		},
@@ -129,12 +137,15 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 6555,
+				"buffer_size": 6571,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"contents": "var dnode = require('dnode'),\nUrl = require('url');\n\nexports.require = ['authorize'];\n\nexports.plugin = function() {\n\n	var haba = this;\n\n\n	this.loaders.push({\n		test: function(path) { \n			return !!path.match(/dnode\\+\\w+:\\/\\//);\n		},\n		load: function(path, callback) {\n\n			var host = Url.parse(path.replace('dnode+',''));\n\n			var client = dnode.connect({ host: host.hostname, port: host.port, reconnect: 2000 }, function(remote) {\n\n				function onAuth(methods) {\n					if(!methods) throw new Error('Invalid authentication credentials for dnode server: ' + host.hostname + ':' + host.port);\n\n					for(var name in methods) {\n\n						var plugin = methods[name];\n						plugin.__remote = true;\n\n						// var existingPlugin = haba.plugin(name);\n\n						/*if(existingPlugin && !existingPlugin.__remote) {\n							continue;\n						}*/\n\n						callback(false, { plugin: methods[name], name: name, remote: true });\n					}\n				}\n\n				var auth = (host.auth || '').split(':');\n\n				remote.authorize(auth[0], auth[1], onAuth);\n			});\n\n			client.on('reconnect', function() {\n				console.log(\"DISCONNECT\");\n			})\n		}\n	});\n\n\n	return {\n		authorize: function(user, pass, callback) {\n			if(haba.authorize(user, pass)) {\n				callback(haba.methods);\n			} else {\n				callback(null);\n			}\n		}\n	}\n}",
 			"file": "lib/loaders/dnode.js",
+			"file_size": 1266,
+			"file_write_time": 1322986365000000,
 			"settings":
 			{
 				"buffer_size": 1266,
@@ -145,7 +156,23 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 371,
+				"buffer_size": 347,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "examples/test1/plugins/hello1.js",
+			"settings":
+			{
+				"buffer_size": 221,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "examples/test2/api/users/photos/index.js",
+			"settings":
+			{
+				"buffer_size": 238,
 				"line_ending": "Unix"
 			}
 		}
@@ -223,7 +250,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 91.0,
 		"where_history":
 		[
 		]
@@ -233,6 +260,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"structr",
+			"require",
+			"dnode",
+			"loader",
+			"require('haba",
+			"()",
+			"dnode",
+			"plugins",
 			"authorize",
 			"							included[path] = 1;\nnormal",
 			"							included[path] = 1;\n",
@@ -298,7 +333,7 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -391,8 +426,8 @@
 						"selection":
 						[
 							[
-								91,
-								91
+								179,
+								184
 							]
 						],
 						"settings":
@@ -548,8 +583,8 @@
 						"selection":
 						[
 							[
-								5862,
-								5862
+								2299,
+								2306
 							]
 						],
 						"settings":
@@ -558,7 +593,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5036.0,
+						"translation.y": 1156.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -591,6 +626,32 @@
 				},
 				{
 					"buffer": 11,
+					"file": "/tmp/subl stdin bi7TwN.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
 					"file": "lib/nameTester.js",
 					"settings":
 					{
@@ -601,8 +662,8 @@
 						"selection":
 						[
 							[
-								38,
-								359
+								226,
+								226
 							]
 						],
 						"settings":
@@ -617,7 +678,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "lib/collection.js",
 					"settings":
 					{
@@ -628,35 +689,8 @@
 						"selection":
 						[
 							[
-								1737,
-								1737
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1622.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "lib/index.js",
-					"settings":
-					{
-						"buffer_size": 2861,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								540,
+								542
 							]
 						],
 						"settings":
@@ -672,50 +706,50 @@
 				},
 				{
 					"buffer": 14,
-					"file": "README.md",
+					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 6555,
+						"buffer_size": 2838,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2627,
-								2627
+								937,
+								937
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1394.0,
+						"translation.y": 645.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 15,
-					"file": "lib/loaders/dnode.js",
+					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 1266,
+						"buffer_size": 6571,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								699,
-								699
+								629,
+								629
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -726,18 +760,45 @@
 				},
 				{
 					"buffer": 16,
-					"file": "package.json",
+					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
-						"buffer_size": 371,
+						"buffer_size": 1266,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								305,
-								305
+								0,
+								1266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 136.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -745,6 +806,58 @@
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "examples/test1/plugins/hello1.js",
+					"settings":
+					{
+						"buffer_size": 221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "examples/test2/api/users/photos/index.js",
+					"settings":
+					{
+						"buffer_size": 238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

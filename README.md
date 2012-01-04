@@ -224,6 +224,14 @@ haba.loaders.push({
 });
 ```
 
+### haba.factory(fn)
+
+Plugin factory function
+
+haba.factory(function(module, options, params) {
+	return module(options, params); //instead of exports.plugin = function(){}, it would be module.exports = function(options, params)
+});
+
 ### haba.newPlugin
 
 Plugin factory for haba. Setting this method will change the way modules are loaded in.
