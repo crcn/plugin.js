@@ -49,7 +49,7 @@
 			"file": "examples/dnode/client.js",
 			"settings":
 			{
-				"buffer_size": 136,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -57,7 +57,7 @@
 			"file": "examples/dnode/server.js",
 			"settings":
 			{
-				"buffer_size": 294,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -89,7 +89,7 @@
 			"file": "lib/core.js",
 			"settings":
 			{
-				"buffer_size": 6117,
+				"buffer_size": 6263,
 				"line_ending": "Unix"
 			}
 		},
@@ -113,7 +113,15 @@
 			"file": "lib/nameTester.js",
 			"settings":
 			{
-				"buffer_size": 359,
+				"buffer_size": 416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin lsaH5u.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -121,7 +129,7 @@
 			"file": "lib/collection.js",
 			"settings":
 			{
-				"buffer_size": 2218,
+				"buffer_size": 2176,
 				"line_ending": "Unix"
 			}
 		},
@@ -137,7 +145,7 @@
 			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 6571,
+				"buffer_size": 6804,
 				"line_ending": "Unix"
 			}
 		},
@@ -250,7 +258,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 91.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -260,6 +268,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"numLoading",
+			"numLoader",
+			"params",
+			"newPlugin",
+			"plugins",
+			"plugins()",
+			"pluginNameTester",
+			"factory",
+			"plugins'",
+			"plugins",
+			"require",
+			"newPlugin",
 			"structr",
 			"require",
 			"dnode",
@@ -333,7 +353,7 @@
 	"groups":
 	[
 		{
-			"selected": 12,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -446,15 +466,15 @@
 					"file": "examples/dnode/client.js",
 					"settings":
 					{
-						"buffer_size": 136,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								110,
-								110
+								0,
+								0
 							]
 						],
 						"settings":
@@ -472,15 +492,15 @@
 					"file": "examples/dnode/server.js",
 					"settings":
 					{
-						"buffer_size": 294,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								134,
-								134
+								0,
+								0
 							]
 						],
 						"settings":
@@ -576,15 +596,15 @@
 					"file": "lib/core.js",
 					"settings":
 					{
-						"buffer_size": 6117,
+						"buffer_size": 6263,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2299,
-								2306
+								4518,
+								4518
 							]
 						],
 						"settings":
@@ -593,7 +613,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1156.0,
+						"translation.y": 3600.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -655,15 +675,15 @@
 					"file": "lib/nameTester.js",
 					"settings":
 					{
-						"buffer_size": 359,
+						"buffer_size": 416,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								226,
-								226
+								62,
+								62
 							]
 						],
 						"settings":
@@ -679,18 +699,44 @@
 				},
 				{
 					"buffer": 13,
-					"file": "lib/collection.js",
+					"file": "/tmp/subl stdin lsaH5u.txt",
 					"settings":
 					{
-						"buffer_size": 2218,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								540,
-								542
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "lib/collection.js",
+					"settings":
+					{
+						"buffer_size": 2176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								445,
+								453
 							]
 						],
 						"settings":
@@ -705,7 +751,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "lib/index.js",
 					"settings":
 					{
@@ -716,8 +762,8 @@
 						"selection":
 						[
 							[
-								937,
-								937
+								348,
+								348
 							]
 						],
 						"settings":
@@ -726,25 +772,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 645.0,
+						"translation.y": 510.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
 					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 6571,
+						"buffer_size": 6804,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								629,
-								629
+								4080,
+								4080
 							]
 						],
 						"settings":
@@ -753,13 +799,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 17,
 					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
@@ -786,7 +832,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "package.json",
 					"settings":
 					{
@@ -814,7 +860,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "examples/test1/plugins/hello1.js",
 					"settings":
 					{
@@ -840,7 +886,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "examples/test2/api/users/photos/index.js",
 					"settings":
 					{
