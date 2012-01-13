@@ -46,6 +46,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin KnviGv.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "examples/dnode/client.js",
 			"settings":
 			{
@@ -89,7 +97,7 @@
 			"file": "lib/core.js",
 			"settings":
 			{
-				"buffer_size": 6263,
+				"buffer_size": 6550,
 				"line_ending": "Unix"
 			}
 		},
@@ -137,7 +145,7 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 2838,
+				"buffer_size": 3818,
 				"line_ending": "Unix"
 			}
 		},
@@ -268,6 +276,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"numLOading",
+			"loadJSF",
+			"numLoading",
+			"loaded",
+			"path.",
+			"fs.",
+			"nativeResolve",
+			"fs",
 			"numLoading",
 			"numLoader",
 			"params",
@@ -353,7 +369,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -463,6 +479,32 @@
 				},
 				{
 					"buffer": 4,
+					"file": "/tmp/subl stdin KnviGv.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "examples/dnode/client.js",
 					"settings":
 					{
@@ -488,7 +530,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "examples/dnode/server.js",
 					"settings":
 					{
@@ -514,7 +556,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "/tmp/subl stdin qLosJn.txt",
 					"settings":
 					{
@@ -540,7 +582,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "/tmp/subl stdin QVEDns.txt",
 					"settings":
 					{
@@ -566,7 +608,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "lib/loaders/now.js",
 					"settings":
 					{
@@ -592,19 +634,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "lib/core.js",
 					"settings":
 					{
-						"buffer_size": 6263,
+						"buffer_size": 6550,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4518,
-								4518
+								4246,
+								4246
 							]
 						],
 						"settings":
@@ -613,13 +655,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3600.0,
+						"translation.y": 3661.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "/tmp/subl stdin krTypp.txt",
 					"settings":
 					{
@@ -645,7 +687,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "/tmp/subl stdin bi7TwN.txt",
 					"settings":
 					{
@@ -671,7 +713,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "lib/nameTester.js",
 					"settings":
 					{
@@ -698,7 +740,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "/tmp/subl stdin lsaH5u.txt",
 					"settings":
 					{
@@ -724,7 +766,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "lib/collection.js",
 					"settings":
 					{
@@ -751,19 +793,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 2838,
+						"buffer_size": 3818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								348,
-								348
+								893,
+								893
 							]
 						],
 						"settings":
@@ -772,13 +814,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 510.0,
+						"translation.y": 1080.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 17,
 					"file": "README.md",
 					"settings":
 					{
@@ -805,7 +847,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
@@ -832,7 +874,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "package.json",
 					"settings":
 					{
@@ -860,7 +902,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "examples/test1/plugins/hello1.js",
 					"settings":
 					{
@@ -886,7 +928,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 21,
 					"file": "examples/test2/api/users/photos/index.js",
 					"settings":
 					{
