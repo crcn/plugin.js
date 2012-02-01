@@ -105,7 +105,15 @@
 			"file": "lib/core.js",
 			"settings":
 			{
-				"buffer_size": 7099,
+				"buffer_size": 8697,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin zI0Sxt.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -316,6 +324,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"methods",
+			"readyListeners",
+			"tryReadyTimeout",
+			"numLoading",
+			"tryReady",
+			"checkReady",
+			"console.log",
+			"setNumLoading",
+			"loadAll",
+			"plugin",
+			"tryRead",
+			"checkReady",
+			"init",
+			"tryReady",
 			"plugins'",
 			"loaders",
 			"object",
@@ -710,15 +732,15 @@
 					"file": "lib/core.js",
 					"settings":
 					{
-						"buffer_size": 7099,
+						"buffer_size": 8697,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4418,
-								4418
+								8257,
+								8257
 							]
 						],
 						"settings":
@@ -727,14 +749,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3541.0,
+						"translation.y": 4937.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 12,
-					"file": "/tmp/subl stdin kNKLYt.txt",
+					"file": "/tmp/subl stdin zI0Sxt.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -760,7 +782,7 @@
 				},
 				{
 					"buffer": 13,
-					"file": "/tmp/subl stdin H46hFT.txt",
+					"file": "/tmp/subl stdin kNKLYt.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -786,7 +808,7 @@
 				},
 				{
 					"buffer": 14,
-					"file": "/tmp/subl stdin krTypp.txt",
+					"file": "/tmp/subl stdin H46hFT.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -812,7 +834,7 @@
 				},
 				{
 					"buffer": 15,
-					"file": "/tmp/subl stdin bi7TwN.txt",
+					"file": "/tmp/subl stdin krTypp.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -838,6 +860,32 @@
 				},
 				{
 					"buffer": 16,
+					"file": "/tmp/subl stdin bi7TwN.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
 					"file": "lib/nameTester.js",
 					"settings":
 					{
@@ -864,7 +912,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "/tmp/subl stdin lsaH5u.txt",
 					"settings":
 					{
@@ -890,7 +938,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "lib/collection.js",
 					"settings":
 					{
@@ -917,7 +965,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "lib/index.js",
 					"settings":
 					{
@@ -944,7 +992,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 21,
 					"file": "/tmp/subl stdin 4FwAWv.txt",
 					"settings":
 					{
@@ -970,7 +1018,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 22,
 					"file": "/tmp/subl stdin tVVKhk.txt",
 					"settings":
 					{
@@ -996,7 +1044,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 22,
+					"buffer": 23,
 					"file": "README.md",
 					"settings":
 					{
@@ -1023,7 +1071,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 24,
 					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
@@ -1050,7 +1098,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 24,
+					"buffer": 25,
 					"file": "package.json",
 					"settings":
 					{
@@ -1078,7 +1126,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 25,
+					"buffer": 26,
 					"file": "examples/test1/plugins/hello1.js",
 					"settings":
 					{
@@ -1104,7 +1152,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 26,
+					"buffer": 27,
 					"file": "examples/test2/api/users/photos/index.js",
 					"settings":
 					{
