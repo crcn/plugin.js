@@ -136,7 +136,7 @@ emits a method against all loaded plugins. If the method doesn't exist, it'll be
 bootstrap.js:
 
 ```javascript
-haba.require('api.server').emit("prepare").emit("init");
+haba.loader().require('api.server').load().emit('doStuff');
 ```
 
 api.server/index.js:
@@ -145,7 +145,7 @@ api.server/index.js:
 exports.plugin = function() {
 	
 	return {
-		prepare: function() {
+		doStuff: function() {
 			console.log("PREPARE");	
 		},
 		init: function() {
