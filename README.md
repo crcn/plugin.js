@@ -5,6 +5,7 @@
 - Modularity - encourages code-reuse, abstraction, and encapsulation
 - Easily drop plugins in and out without breaking your program
 - Maintainability
+- Flexibility over dependencies
 - Asyncronously load remote plugins via [dnode](/substack/dnode) (*soon* - [now.js](/flotype/now), [beanpoll](beanpole)). 
 - *soon* double as online async module loader (similar to [head](https://github.com/headjs/headjs)).
 
@@ -54,7 +55,7 @@ plugins.require('path/to/plugin.js').      // require one plugin
 require('path/to/plugins/dir').          // require all plugins in directory
 require('path/to/plugins/**/*.plugin.js'). // find plugins, and load them
 require('plugin1.js','plugin2.js','plugin3.js'). //multiple plugin args
-require('./package.json').init(); //load plugins in configuration file { plugins: ['my/plugin.js','...'] }
+require('./package.json').load(); //load plugins in configuration file { plugins: ['my/plugin.js','...'] }
 ```
 
 ### haba.paths(path)
@@ -154,59 +155,44 @@ exports.plugin = function() {
 }
 ```
 
-### haba.init()
+### haba.load()
 
-Wrapper for `haba.emit("init")`
+Loads the plugins, and initializes them.
 
 ### haba.next(callback)
 
 Queue function called after loading in all modules
 
-### haba.methods
+### haba.exports
 
 All the invokable methods against modules
+
+
+
+
+### haba.plugins(search)
+
+Returns *multiple* plugins based on the search criteria.
+
+```
+
+var loader = haba.loader();
+
+loader.require('oauth.part.twitter','oauth.part.facebook','oauth.core').
+load(function() {
+	loader.plugins(/^oauth.part.\w+$/).forEach(function(service) {
+	
+		//do stuff with the oauth plugins
+
+	});
+});
+```
+
 
 ### haba.plugin(search)
 
 Returns a *single* based on the search criteria given.
 
-boostrap.js:
-
-```javascript
-haba.require('plugin1.js','plugin2.js').init();
-```
-
-plugin1.js:
-
-```javascript
-
-exports.plugin = function() {
-	
-	var haba = this;
-
-	return {
-		init: function() {
-			haba.plugin('plugin2').sayHello();
-		}
-	}
-}
-```
-
-plugin2.js
-
-```javascript
-exports.plugin = function() {
-	return {
-		sayHello: function() {
-			console.log('hello!');
-		}
-	}
-}
-```
-
-### haba.plugins(search)
-
-Returns *multiple* plugins based on the search criteria.
 
 ### haba.loaders
 
@@ -251,7 +237,7 @@ haba.newPlugin = function(module, options, params) {
 
 ### exports.require
 
-Dependencies for the given plugin. This is checked once `haba.call`, or `haba.init` is invoked. An exception is thrown if there are any missing dependencies.
+Dependencies for the given plugin. This is checked once `haba.call`, or `haba.load` is invoked. An exception is thrown if there are any missing dependencies.
 
 ```javascript
 
