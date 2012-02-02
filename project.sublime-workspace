@@ -105,7 +105,7 @@
 			"file": "lib/core.js",
 			"settings":
 			{
-				"buffer_size": 8769,
+				"buffer_size": 8773,
 				"line_ending": "Unix"
 			}
 		},
@@ -207,7 +207,7 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 3975,
+				"buffer_size": 4025,
 				"line_ending": "Unix"
 			}
 		},
@@ -232,6 +232,14 @@
 			"settings":
 			{
 				"buffer_size": 5901,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin fHtLfQ.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -354,6 +362,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"includePaths",
 			"haba.req",
 			".init",
 			"onPluginLoaded",
@@ -471,7 +480,7 @@
 	"groups":
 	[
 		{
-			"selected": 26,
+			"selected": 11,
 			"sheets":
 			[
 				{
@@ -766,15 +775,15 @@
 					"file": "lib/core.js",
 					"settings":
 					{
-						"buffer_size": 8769,
+						"buffer_size": 8773,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2795,
-								2795
+								6543,
+								6547
 							]
 						],
 						"settings":
@@ -783,7 +792,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1801.0,
+						"translation.y": 4740.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1081,15 +1090,15 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 3975,
+						"buffer_size": 4025,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								632,
-								632
+								4025,
+								4025
 							]
 						],
 						"settings":
@@ -1098,7 +1107,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2057.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1184,6 +1193,32 @@
 				},
 				{
 					"buffer": 27,
+					"file": "/tmp/subl stdin fHtLfQ.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 28,
 					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
@@ -1210,7 +1245,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 28,
+					"buffer": 29,
 					"file": "package.json",
 					"settings":
 					{
@@ -1238,7 +1273,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 29,
+					"buffer": 30,
 					"file": "examples/test1/plugins/hello1.js",
 					"settings":
 					{
@@ -1264,7 +1299,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 30,
+					"buffer": 31,
 					"file": "examples/test2/api/users/photos/index.js",
 					"settings":
 					{
