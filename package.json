@@ -2,7 +2,7 @@
     "author": "Craig Condon",
     "name": "haba",
     "description": "Plugin library",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "repository": {
         "type": "git",
         "url": "git://github.com/crcn/haba.git"
