@@ -55,7 +55,7 @@ plugins.require('path/to/plugin.js').      // require one plugin
 require('path/to/plugins/dir').          // require all plugins in directory
 require('path/to/plugins/**/*.plugin.js'). // find plugins, and load them
 require('plugin1.js','plugin2.js','plugin3.js'). //multiple plugin args
-require('./package.json').load(); //load plugins in configuration file { plugins: ['my/plugin.js','...'] }
+require('./config.json').load(); //load plugins in configuration file { plugins: ['my/plugin.js','...'] }
 ```
 
 ### haba.paths(path)
@@ -97,7 +97,7 @@ exports.plugin = function(ops, params) {
 
 ### haba.options(ops)
 
-Adds / returns options which as passed in the first parameter for each plugin.
+Adds / returns options which are passed in the first parameter for each plugin.
 
 bootstrap.js:
 
