@@ -244,6 +244,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin YgUVTs.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/tmp/subl stdin 4FwAWv.txt",
 			"settings":
 			{
@@ -394,6 +402,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"package.",
 			"try",
 			"globalExis",
 			"params",
@@ -523,7 +532,7 @@
 	"groups":
 	[
 		{
-			"selected": 27,
+			"selected": 31,
 			"sheets":
 			[
 				{
@@ -1261,7 +1270,7 @@
 				},
 				{
 					"buffer": 28,
-					"file": "/tmp/subl stdin 4FwAWv.txt",
+					"file": "/tmp/subl stdin YgUVTs.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1287,7 +1296,7 @@
 				},
 				{
 					"buffer": 29,
-					"file": "/tmp/subl stdin tVVKhk.txt",
+					"file": "/tmp/subl stdin 4FwAWv.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1313,6 +1322,32 @@
 				},
 				{
 					"buffer": 30,
+					"file": "/tmp/subl stdin tVVKhk.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 31,
 					"file": "README.md",
 					"settings":
 					{
@@ -1323,8 +1358,8 @@
 						"selection":
 						[
 							[
-								5893,
-								5893
+								1918,
+								1918
 							]
 						],
 						"settings":
@@ -1333,13 +1368,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3737.0,
+						"translation.y": 1111.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 31,
+					"buffer": 32,
 					"file": "/tmp/subl stdin fHtLfQ.txt",
 					"settings":
 					{
@@ -1365,7 +1400,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 32,
+					"buffer": 33,
 					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
@@ -1392,7 +1427,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 33,
+					"buffer": 34,
 					"file": "package.json",
 					"settings":
 					{
@@ -1420,7 +1455,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 34,
+					"buffer": 35,
 					"file": "examples/test1/plugins/hello1.js",
 					"settings":
 					{
@@ -1446,7 +1481,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 35,
+					"buffer": 36,
 					"file": "examples/test2/api/users/photos/index.js",
 					"settings":
 					{
