@@ -9,8 +9,16 @@
     },
     "dependencies": {
         "tq": "0.0.1",
-        "structr": "0.1.0"
+        "structr": "0.1.0",
+        "mesh":"*"
+    },
+    "directories": {
+        "mesh-src": "./src",
+        "lib":"./lib"
+    },
+    "scripts": {
+        "install": "./node_modules/mesh/bin/mesh make node"
     },
     "devDependencies": {},
-    "main": "./lib/index.js"
+    "main": "./lib/node/index.js"
 }

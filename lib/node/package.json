@@ -1,0 +1,20 @@
+{
+  "directories": {},
+  "author": "Craig Condon",
+  "name": "haba",
+  "description": "Plugin library",
+  "version": "0.0.13",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crcn/haba.git"
+  },
+  "dependencies": {
+    "tq": "0.0.1",
+    "structr": "0.1.0",
+    "mesh": "*"
+  },
+  "scripts": {
+    "install": "./node_modules/mesh/bin/mesh make node"
+  },
+  "devDependencies": {}
+}
