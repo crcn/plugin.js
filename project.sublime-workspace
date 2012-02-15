@@ -338,6 +338,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin eC9wdt.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "examples/test1/plugins/hello1.js",
 			"settings":
 			{
@@ -358,6 +366,38 @@
 			"settings":
 			{
 				"buffer_size": 4030,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/common/index.js",
+			"settings":
+			{
+				"buffer_size": 3958,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/common/core.js",
+			"settings":
+			{
+				"buffer_size": 8934,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/web/fs.js",
+			"settings":
+			{
+				"buffer_size": 486,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/node/fs.js",
+			"settings":
+			{
+				"buffer_size": 283,
 				"line_ending": "Unix"
 			}
 		}
@@ -445,6 +485,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"isDire",
+			"plugin",
+			"haba",
+			"params",
 			"^*",
 			"localPlugins",
 			"plugins",
@@ -578,7 +622,7 @@
 	"groups":
 	[
 		{
-			"selected": 38,
+			"selected": 45,
 			"sheets":
 			[
 				{
@@ -1606,6 +1650,32 @@
 				},
 				{
 					"buffer": 39,
+					"file": "/tmp/subl stdin eC9wdt.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 40,
 					"file": "examples/test1/plugins/hello1.js",
 					"settings":
 					{
@@ -1631,7 +1701,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 40,
+					"buffer": 41,
 					"file": "examples/test2/api/users/photos/index.js",
 					"settings":
 					{
@@ -1657,7 +1727,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 41,
+					"buffer": 42,
 					"file": "lib/web/index.js",
 					"settings":
 					{
@@ -1676,6 +1746,112 @@
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 43,
+					"file": "src/common/index.js",
+					"settings":
+					{
+						"buffer_size": 3958,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								77
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": "src/common/core.js",
+					"settings":
+					{
+						"buffer_size": 8934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5469,
+								5471
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 45,
+					"file": "src/web/fs.js",
+					"settings":
+					{
+						"buffer_size": 486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								425,
+								425
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 46,
+					"file": "src/node/fs.js",
+					"settings":
+					{
+						"buffer_size": 283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
