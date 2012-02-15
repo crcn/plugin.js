@@ -189,7 +189,7 @@ module.exports = function() {
 
 
 	//now that all the core loaders are in, we can add the additional loaders dropped in ./loaders (cleaner)
-	haba.require( __dirname + '/plugins');
+	// haba.require( __dirname + '/plugins');
 
 
 	return haba;

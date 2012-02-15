@@ -97,7 +97,7 @@
 			"file": "lib/loaders/now.js",
 			"settings":
 			{
-				"buffer_size": 262,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -105,7 +105,7 @@
 			"file": "lib/core.js",
 			"settings":
 			{
-				"buffer_size": 8933,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -207,7 +207,7 @@
 			"file": "lib/nameTester.js",
 			"settings":
 			{
-				"buffer_size": 416,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -223,7 +223,7 @@
 			"file": "lib/collection.js",
 			"settings":
 			{
-				"buffer_size": 2176,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -239,7 +239,15 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 4028,
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin SdX7xP.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -317,7 +325,15 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 348,
+				"buffer_size": 536,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin xq418u.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -334,6 +350,14 @@
 			"settings":
 			{
 				"buffer_size": 238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/web/index.js",
+			"settings":
+			{
+				"buffer_size": 4030,
 				"line_ending": "Unix"
 			}
 		}
@@ -554,7 +578,7 @@
 	"groups":
 	[
 		{
-			"selected": 27,
+			"selected": 38,
 			"sheets":
 			[
 				{
@@ -823,15 +847,15 @@
 					"file": "lib/loaders/now.js",
 					"settings":
 					{
-						"buffer_size": 262,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9,
-								9
+								0,
+								0
 							]
 						],
 						"settings":
@@ -849,15 +873,15 @@
 					"file": "lib/core.js",
 					"settings":
 					{
-						"buffer_size": 8933,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4157,
-								4157
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1162,15 +1186,15 @@
 					"file": "lib/nameTester.js",
 					"settings":
 					{
-						"buffer_size": 416,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								62,
-								62
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1215,15 +1239,15 @@
 					"file": "lib/collection.js",
 					"settings":
 					{
-						"buffer_size": 2176,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								213,
-								213
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1268,15 +1292,15 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 4028,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								584,
-								584
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1292,7 +1316,7 @@
 				},
 				{
 					"buffer": 28,
-					"file": "/tmp/subl stdin hvowq2.txt",
+					"file": "/tmp/subl stdin SdX7xP.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1318,7 +1342,7 @@
 				},
 				{
 					"buffer": 29,
-					"file": "/tmp/subl stdin YgUVTs.txt",
+					"file": "/tmp/subl stdin hvowq2.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1344,7 +1368,7 @@
 				},
 				{
 					"buffer": 30,
-					"file": "/tmp/subl stdin 4FwAWv.txt",
+					"file": "/tmp/subl stdin YgUVTs.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1370,7 +1394,7 @@
 				},
 				{
 					"buffer": 31,
-					"file": "/tmp/subl stdin tVVKhk.txt",
+					"file": "/tmp/subl stdin 4FwAWv.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1396,6 +1420,32 @@
 				},
 				{
 					"buffer": 32,
+					"file": "/tmp/subl stdin tVVKhk.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 33,
 					"file": "README.md",
 					"settings":
 					{
@@ -1422,7 +1472,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 33,
+					"buffer": 34,
 					"file": "/tmp/subl stdin 6yzkKt.txt",
 					"settings":
 					{
@@ -1448,7 +1498,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 34,
+					"buffer": 35,
 					"file": "/tmp/subl stdin fHtLfQ.txt",
 					"settings":
 					{
@@ -1474,7 +1524,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 35,
+					"buffer": 36,
 					"file": "lib/loaders/dnode.js",
 					"settings":
 					{
@@ -1501,19 +1551,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 36,
+					"buffer": 37,
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 348,
+						"buffer_size": 536,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								382,
+								382
 							]
 						],
 						"settings":
@@ -1529,7 +1579,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 37,
+					"buffer": 38,
+					"file": "/tmp/subl stdin xq418u.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 39,
 					"file": "examples/test1/plugins/hello1.js",
 					"settings":
 					{
@@ -1555,7 +1631,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 38,
+					"buffer": 40,
 					"file": "examples/test2/api/users/photos/index.js",
 					"settings":
 					{
@@ -1573,6 +1649,33 @@
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 41,
+					"file": "lib/web/index.js",
+					"settings":
+					{
+						"buffer_size": 4030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
