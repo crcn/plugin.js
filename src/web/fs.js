@@ -4,8 +4,7 @@ exports.isDirectory = function(path) {
 	return !path.match(/\.\w+$/);
 }
 
-exports.readdirSync = function(path) {
-
+function getPath(path) {
 	var parts = path.split('/'),
 	cp = allFiles;
 
@@ -13,10 +12,21 @@ exports.readdirSync = function(path) {
 		cp = cp[part];
 	});
 
+	return cp;
+}
+
+exports.readdirSync = function(path) {
+
+	var cp = getPath(path);
+
 	if(!cp) return [];
 
 
 	return Object.keys(cp);
+}
+
+exports.exists = function(file) {
+	return !!getPath(file);
 }
 
 
