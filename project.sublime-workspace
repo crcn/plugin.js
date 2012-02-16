@@ -325,7 +325,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 536,
+				"buffer_size": 440,
 				"line_ending": "Unix"
 			}
 		},
@@ -365,7 +365,7 @@
 			"file": "lib/web/index.js",
 			"settings":
 			{
-				"buffer_size": 4030,
+				"buffer_size": 3958,
 				"line_ending": "Unix"
 			}
 		},
@@ -381,7 +381,7 @@
 			"file": "src/common/core.js",
 			"settings":
 			{
-				"buffer_size": 8934,
+				"buffer_size": 9209,
 				"line_ending": "Unix"
 			}
 		},
@@ -394,10 +394,26 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin iSUX8T.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/node/fs.js",
 			"settings":
 			{
 				"buffer_size": 283,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/node/core.js",
+			"settings":
+			{
+				"buffer_size": 9209,
 				"line_ending": "Unix"
 			}
 		}
@@ -485,6 +501,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"console.",
+			"queue.",
+			"next",
+			"queue.",
+			"next",
+			".next(",
+			"Structr.cop",
 			"isDire",
 			"plugin",
 			"haba",
@@ -622,7 +645,7 @@
 	"groups":
 	[
 		{
-			"selected": 45,
+			"selected": 48,
 			"sheets":
 			[
 				{
@@ -1599,15 +1622,15 @@
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 536,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								382
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1731,7 +1754,7 @@
 					"file": "lib/web/index.js",
 					"settings":
 					{
-						"buffer_size": 4030,
+						"buffer_size": 3958,
 						"regions":
 						{
 						},
@@ -1765,8 +1788,8 @@
 						"selection":
 						[
 							[
-								77,
-								77
+								3261,
+								3261
 							]
 						],
 						"settings":
@@ -1775,7 +1798,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1949.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1785,15 +1808,15 @@
 					"file": "src/common/core.js",
 					"settings":
 					{
-						"buffer_size": 8934,
+						"buffer_size": 9209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5469,
-								5471
+								3663,
+								3671
 							]
 						],
 						"settings":
@@ -1802,7 +1825,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2341.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1825,7 +1848,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1835,6 +1859,32 @@
 				},
 				{
 					"buffer": 46,
+					"file": "/tmp/subl stdin iSUX8T.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 47,
 					"file": "src/node/fs.js",
 					"settings":
 					{
@@ -1855,6 +1905,33 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 48,
+					"file": "lib/node/core.js",
+					"settings":
+					{
+						"buffer_size": 9209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
