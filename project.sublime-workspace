@@ -330,6 +330,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin p7V5c4.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/tmp/subl stdin xq418u.txt",
 			"settings":
 			{
@@ -414,6 +422,30 @@
 			"settings":
 			{
 				"buffer_size": 9209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin 5nXEk5.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".cupboard",
+			"settings":
+			{
+				"buffer_size": 117,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin p0YegU.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -645,7 +677,7 @@
 	"groups":
 	[
 		{
-			"selected": 48,
+			"selected": 52,
 			"sheets":
 			[
 				{
@@ -1647,7 +1679,7 @@
 				},
 				{
 					"buffer": 38,
-					"file": "/tmp/subl stdin xq418u.txt",
+					"file": "/tmp/subl stdin p7V5c4.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1673,7 +1705,7 @@
 				},
 				{
 					"buffer": 39,
-					"file": "/tmp/subl stdin eC9wdt.txt",
+					"file": "/tmp/subl stdin xq418u.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -1699,6 +1731,32 @@
 				},
 				{
 					"buffer": 40,
+					"file": "/tmp/subl stdin eC9wdt.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 41,
 					"file": "examples/test1/plugins/hello1.js",
 					"settings":
 					{
@@ -1724,7 +1782,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 41,
+					"buffer": 42,
 					"file": "examples/test2/api/users/photos/index.js",
 					"settings":
 					{
@@ -1750,7 +1808,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 42,
+					"buffer": 43,
 					"file": "lib/web/index.js",
 					"settings":
 					{
@@ -1777,7 +1835,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 43,
+					"buffer": 44,
 					"file": "src/common/index.js",
 					"settings":
 					{
@@ -1804,7 +1862,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 44,
+					"buffer": 45,
 					"file": "src/common/core.js",
 					"settings":
 					{
@@ -1831,7 +1889,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 45,
+					"buffer": 46,
 					"file": "src/web/fs.js",
 					"settings":
 					{
@@ -1858,7 +1916,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 46,
+					"buffer": 47,
 					"file": "/tmp/subl stdin iSUX8T.txt",
 					"settings":
 					{
@@ -1884,7 +1942,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 47,
+					"buffer": 48,
 					"file": "src/node/fs.js",
 					"settings":
 					{
@@ -1910,7 +1968,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 48,
+					"buffer": 49,
 					"file": "lib/node/core.js",
 					"settings":
 					{
@@ -1932,6 +1990,84 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 50,
+					"file": "/tmp/subl stdin 5nXEk5.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 51,
+					"file": ".cupboard",
+					"settings":
+					{
+						"buffer_size": 117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 52,
+					"file": "/tmp/subl stdin p0YegU.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
