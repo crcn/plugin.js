@@ -437,12 +437,20 @@
 			"file": ".cupboard",
 			"settings":
 			{
-				"buffer_size": 117,
+				"buffer_size": 121,
 				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "/tmp/subl stdin p0YegU.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin k2r7Gu.txt",
 			"settings":
 			{
 				"buffer_size": 0,
@@ -677,7 +685,7 @@
 	"groups":
 	[
 		{
-			"selected": 52,
+			"selected": 51,
 			"sheets":
 			[
 				{
@@ -2025,15 +2033,15 @@
 					"file": ".cupboard",
 					"settings":
 					{
-						"buffer_size": 117,
+						"buffer_size": 121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								56
+								70,
+								70
 							]
 						],
 						"settings":
@@ -2049,6 +2057,32 @@
 				{
 					"buffer": 52,
 					"file": "/tmp/subl stdin p0YegU.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 53,
+					"file": "/tmp/subl stdin k2r7Gu.txt",
 					"settings":
 					{
 						"buffer_size": 0,
