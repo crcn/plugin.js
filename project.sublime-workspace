@@ -325,7 +325,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 440,
+				"buffer_size": 392,
 				"line_ending": "Unix"
 			}
 		},
@@ -442,6 +442,14 @@
 			}
 		},
 		{
+			"file": "/tmp/subl stdin igdSNw.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/tmp/subl stdin p0YegU.txt",
 			"settings":
 			{
@@ -541,6 +549,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"nativeResolve",
+			"try",
 			"console.",
 			"queue.",
 			"next",
@@ -666,8 +676,7 @@
 			"normalizeRequired",
 			"normaliz",
 			"normal",
-			"args",
-			"--all"
+			"args"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -685,7 +694,7 @@
 	"groups":
 	[
 		{
-			"selected": 51,
+			"selected": 45,
 			"sheets":
 			[
 				{
@@ -1662,7 +1671,7 @@
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 440,
+						"buffer_size": 392,
 						"regions":
 						{
 						},
@@ -1676,7 +1685,7 @@
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1854,8 +1863,8 @@
 						"selection":
 						[
 							[
-								3261,
-								3261
+								1745,
+								1747
 							]
 						],
 						"settings":
@@ -1864,7 +1873,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1949.0,
+						"translation.y": 931.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1881,8 +1890,8 @@
 						"selection":
 						[
 							[
-								3663,
-								3671
+								304,
+								317
 							]
 						],
 						"settings":
@@ -1891,7 +1900,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2341.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1908,8 +1917,8 @@
 						"selection":
 						[
 							[
-								425,
-								425
+								411,
+								418
 							]
 						],
 						"settings":
@@ -2056,7 +2065,7 @@
 				},
 				{
 					"buffer": 52,
-					"file": "/tmp/subl stdin p0YegU.txt",
+					"file": "/tmp/subl stdin igdSNw.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -2082,6 +2091,32 @@
 				},
 				{
 					"buffer": 53,
+					"file": "/tmp/subl stdin p0YegU.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 54,
 					"file": "/tmp/subl stdin k2r7Gu.txt",
 					"settings":
 					{
