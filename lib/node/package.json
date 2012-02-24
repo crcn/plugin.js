@@ -1,5 +1,4 @@
 {
-  "directories": {},
   "author": "Craig Condon",
   "name": "plugin",
   "description": "Plugin library",
@@ -12,5 +11,10 @@
     "tq": "0.0.1",
     "structr": "0.1.0"
   },
-  "devDependencies": {}
+  "directories": {
+    "mesh-src": "./src",
+    "lib": "./lib"
+  },
+  "devDependencies": {},
+  "main": "./lib/node/index.js"
 }

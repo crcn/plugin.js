@@ -389,7 +389,23 @@
 			"file": "src/common/core.js",
 			"settings":
 			{
-				"buffer_size": 9209,
+				"buffer_size": 9236,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin PdHKW6.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin 3d0TXF.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -421,7 +437,7 @@
 			"file": "lib/node/core.js",
 			"settings":
 			{
-				"buffer_size": 9209,
+				"buffer_size": 9239,
 				"line_ending": "Unix"
 			}
 		},
@@ -549,6 +565,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".name =",
+			".__name",
+			".name",
+			"console.w",
 			"nativeResolve",
 			"try",
 			"console.",
@@ -672,11 +692,7 @@
 			".module",
 			"modules",
 			"callback",
-			"instance",
-			"normalizeRequired",
-			"normaliz",
-			"normal",
-			"args"
+			"instance"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1863,8 +1879,8 @@
 						"selection":
 						[
 							[
-								1745,
-								1747
+								1897,
+								1900
 							]
 						],
 						"settings":
@@ -1873,7 +1889,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 931.0,
+						"translation.y": 1111.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1883,15 +1899,15 @@
 					"file": "src/common/core.js",
 					"settings":
 					{
-						"buffer_size": 9209,
+						"buffer_size": 9236,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								304,
-								317
+								4224,
+								4231
 							]
 						],
 						"settings":
@@ -1900,13 +1916,65 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2551.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 46,
+					"file": "/tmp/subl stdin PdHKW6.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 47,
+					"file": "/tmp/subl stdin 3d0TXF.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 48,
 					"file": "src/web/fs.js",
 					"settings":
 					{
@@ -1933,7 +2001,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 47,
+					"buffer": 49,
 					"file": "/tmp/subl stdin iSUX8T.txt",
 					"settings":
 					{
@@ -1959,7 +2027,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 48,
+					"buffer": 50,
 					"file": "src/node/fs.js",
 					"settings":
 					{
@@ -1985,19 +2053,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 49,
+					"buffer": 51,
 					"file": "lib/node/core.js",
 					"settings":
 					{
-						"buffer_size": 9209,
+						"buffer_size": 9239,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3526,
+								3434
 							]
 						],
 						"settings":
@@ -2006,13 +2074,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2.0,
+						"translation.y": 2236.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 50,
+					"buffer": 52,
 					"file": "/tmp/subl stdin 5nXEk5.txt",
 					"settings":
 					{
@@ -2038,7 +2106,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 51,
+					"buffer": 53,
 					"file": ".cupboard",
 					"settings":
 					{
@@ -2064,7 +2132,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 52,
+					"buffer": 54,
 					"file": "/tmp/subl stdin igdSNw.txt",
 					"settings":
 					{
@@ -2090,7 +2158,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 53,
+					"buffer": 55,
 					"file": "/tmp/subl stdin p0YegU.txt",
 					"settings":
 					{
@@ -2116,7 +2184,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 54,
+					"buffer": 56,
 					"file": "/tmp/subl stdin k2r7Gu.txt",
 					"settings":
 					{
