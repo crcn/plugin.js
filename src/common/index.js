@@ -142,22 +142,23 @@ module.exports = function() {
 
 	var loadTree = {
 		test: function(dir) {
-			return dir.indexOf('**') > -1
+			return String(dir).indexOf('**') > -1
 		},
-		load: function(dir, callback) {
+		prepare: function(dir, callback) {
+
 			var dirParts = dir.split('**'),
 			cwd          = dirParts.shift(), 
-			search       = new RegExp('^'+dirParts.pop().split('/').pop().replace(/\./g,'\\.').replace(/\*/g,'.*?') + '$');
-
+			// search       = new RegExp('^'+cwd + "/"+dirParts.pop().split('/').pop().replace(/\./g,'\\.').replace(/\*/g,'.*?') + '$');
+			search = new RegExp(""+dir.replace('.','\\.').replace('**','.*').replace('/*/','/[^\/]+/')+"")
 			var files = findModules(search, cwd),
 			loadable = [];
 
 
 			files.forEach(function(file, i) {
-				loadable.push(loadJsFile.load(file));
+				loadable.push(loadJsFile.prepare(file, path.basename(file)));
 			});
 
-			callback(false, loadable);
+			if(callback) callback(false, loadable);
 		}
 	}
 
