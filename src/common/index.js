@@ -132,7 +132,7 @@ module.exports = function() {
 			if(fs.isDirectory(fullPath)) {
 				findModules(search, fullPath, modules);
 			} else 
-			if(basename.match(search)) {
+			if(fullPath.match(search)) {
 				modules.push(fs.realpathSync(fullPath));
 			}
 		});
@@ -153,10 +153,11 @@ module.exports = function() {
 			var files = findModules(search, cwd),
 			loadable = [];
 
-
 			files.forEach(function(file, i) {
 				loadable.push(loadJsFile.prepare(file, path.basename(file)));
 			});
+
+			
 
 			if(callback) callback(false, loadable);
 		}
