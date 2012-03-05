@@ -12,9 +12,10 @@
         "structr": "0.1.0"
     },
     "directories": {
-        "mesh-src": "./src",
+        "src": "./src",
         "lib": "./lib"
     },
     "devDependencies": {},
-    "main": "./lib/node/index.js"
+    "main": "./lib/node/index.js",
+    "mesh": true
 }
