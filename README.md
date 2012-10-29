@@ -1,176 +1,150 @@
-### Plugin.js
+# Plugin.js
 
-#### All your module loading in one place.
+## Features
 
-### Example
+- ability to load entire directories
+- add remote plugins (dnode)
+
+## Example
 
 bootstrap.js
 
 ```javascript
-
 var plugin = require("plugin"),
-express    = require("express");
+express = require("express"),
 
-//plug into the express server
-var loader = plugin(express()).
+plugin(express()).
 params({
-	http: {
-		port: 8080
-	}
+	http: { port: 8080 }
 }).
 require(__dirname + "/config.js").
 require(__dirname + "/someRoutes.js").
 load();
-
 ```
 
 config.js
 
 ```javascript
-module.exports = function(server, loader) {
+exports.plugin = function(server, loader) {
 	server.listen(loader.params("http.port") || 80);
 }
 ```
 
 someRoutes.js
-
 ```javascript
 module.exports = function(server) {
+    server.get("/hello", function(req, res) {
+        res.end("world!");
+    })
+}
+```
+
+
+## Plugin API
+
+### loader .plugin(plugInto, ...)
+
+Initializes the loader for local / remote plugins. `plugInto` is passed into the first parameter when calling `.plugin()` on each required module.
+
+### loader.use(extension)
+
+Extends the loader. This allows you to customize how modules are loaded into your sandbox.
+
+```javascript
+require("plugin")().
+use(require("plugin-dnode")).
+require("dnode://localhost").
+load();
+```
+
+### loader.params(keyOrParams, value)
+
+Get / set params
+
+bootstrap.js
+
+```javascript
+require("plugin")().
+params("some.message", 8080).
+require(__dirname + "/hello.js").
+load();
+```
+
+server.js
+```javascript
+exports.plugin = function(loader) {
+	console.log(loader.params("some.message"));
+}
+```
+
+### loader.require(source, ...)
+
+path to the plugins
+
+```javascript
+loader.
+require(__dirname + "/plugin.js").
+require(__dirname + "/someDirectory.js").
+require("multiple", "plugins").
+require("dnode://localhost").
+load();
+```
+
+### loader.load(callback)
+
+loads the required dependencies
+
+### loader.module(search)
+
+Returns one loaded module based on the search query. Note that calling this method
+may load the given module if it hasn't already. Here's a real-world example:
+
+bootstrap.js
+
+```javascript
+require("plugin")().
+params("http.port", 8080).
+require(__dirname + "/server.js").
+require(__dirname + "/routes.js").
+load();
+```
+
+server.js
+
+```javascript
+exports.isHttpServer = true; //not needed - just used for searching
+exports.plugin = function(loader) {
+	var server = express();
+	server.listen(loader.params("http.port"));
+	return server;
+}
+```
+
+routes.js
+
+```javascript
+exports.plugin = function(loader) {
+	var server = loader.module("server");
 	server.get("/hello", function(req, res) {
-		res.end("world!");
+		res.end("hello world!");
 	})
 }
 ```
 
-### Plugin API
-
-#### loader .plugin(plugInto)
-
-this is the first parameter when loading each plugin. See the express example above.
-
-#### loader.require(path)
-
-the path to the plugins.
+Also note that you can search based on attributes. Here's `routes.js` again:
 
 ```javascript
-plugins.require('path/to/plugin.js').      // require one plugin
-require('path/to/plugins/dir').          // require all plugins in directory
-require('path/to/plugins/**/*.plugin.js'). // find plugins, and load them
-require('plugin1.js','plugin2.js','plugin3.js'). //multiple plugin args
-require('./config.json').load(); //load plugins in configuration file { plugins: ['my/plugin.js','...'] }
-```
-
-
-#### loader.load(callback)
-
-Loads all the plugins.
-
-- `callback` - called once all plugins are loaded
-
-#### loader.paths(path)
-
-adds a path to scan when requiring plugins. Similar to the old `require.paths.unshift`
-
-#### loader.params(param, value)
-
-Getter / setter for global parameters. 
-
-```javascript
-var loader = plugin().
-params({
-	"http.port": 80,
-	"person": {
-		"name": "craig"
-	}
-}).
-params("secret", "password");
-
-
-console.log(loader.params("http")); //{ port: 80 }
-console.log(loader.params("http.port")); // 80
-console.log(loader.params("person")); // { name: "craig" }
-console.log(loader.params("secret")); // password
-```
-
-#### loader.plugins(search)
-
-Returns loaded plugins based on the search query given
-
-```javascript
-var loader = require("plugin")();
-
-loader.require('oauth.part.twitter','oauth.part.facebook','oauth.core').
-load(function() {
-    loader.plugins(/^oauth.part.\w+$/).forEach(function(service) {
-
-        //do stuff with the oauth plugins
-
-    });
-});
-```
-
-#### loader.exports
-
-aggregation of all the returned objects from each plugin.
-
-
-## Plugins API
-
-
-### exports.require
-
-Dependencies for the given plugin. This is checked once `plugin.call`, or `plugin.load` is invoked. An exception is thrown if there are any missing dependencies.
-
-```javascript
-
-exports.require = ['api.services.photos.*','another-plugin']; //requires any photo services. E.g: api.services.photos.facebook, api.services.photos.flickr
-
-exports.require = [/api\.\w+/]; //regexp test
-
-exports.require = function(name) { //function test
-	return name.indexOf('api.services.photos') > -1
-};
-
-
-```
-
-You can also load in any given plugin via `exports.require`:
-
-```javascript
-
-exports.require = 'my-plugin';
-
-exports.plugin = function() {
-	
-	var plugin = this;
-
-	return {
-		init: function() {
-			
-			plugin.plugin('my-plugin').doStuff();//return a single instance
-			plugin.plugins('my-plugin').forEach(funtion(plugin) {//return multiple instances
-				plugin.doStuff();
-			});
-		}
-	}
+exports.plugin = function(loader) {
+	var server = loader.module({ isHttpServer: true });
+	//do stuff here
 }
 ```
 
-### exports.name
+### loader.modules(search)
 
-Optional name for the plugin. The default value is name provided when requiring the plugin.
+Just like `loader.module(search)`, but returns multiple modules.
 
-### Plugin exports.plugin(plugInto, loader)
+### loader.exports
 
-Called when the plugin is loaded. 
-
-- `plugInto` - options which are passed to the plugin, along with every other plugin.
-- `loader` - the plugin loader. Also accessible via `this`.
-- return type can be `void`, or an `object`.
-
-
-
-
-
-
+This is all the plugins combined, and it's set once everything's loaded.
 
