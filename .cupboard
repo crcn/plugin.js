@@ -1,7 +1,2 @@
 [commands]
-proj = subl --project project.sublime-project
-
-[ignore]
-lib
-project.sublime-project
-project.sublime-workspace
+proj = subl .
